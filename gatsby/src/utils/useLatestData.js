@@ -47,7 +47,7 @@ export default function useLatestData() {
         setSlicemaster(res.data.StoreSettings.slicemaster);
       })
       .catch((err) => {
-        console.log('shoot!', err);
+        // console.log('shoot!', err);
       });
   }, []);
   return {

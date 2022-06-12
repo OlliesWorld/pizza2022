@@ -15,10 +15,7 @@ export default function SinglePizzaPage({ data: { pizza } }) {
     <>
       <SEO title={pizza.name} image={pizza.image?.asset?.fluid?.src} />
       <PizzaStyle>
-        <GatsbyImage
-          image={pizza.image.childImageSharp.gatsbyImageData}
-          alt={pizza.name}
-        />
+        <GatsbyImage image={pizza.image.asset.gatsbyImage} alt={pizza.name} />
         <div>
           <h2 className="mark">{pizza.name}</h2>
           <ul>
